@@ -17,12 +17,17 @@ const Footer = () => {
           
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                <Code className="w-5 h-5 text-white" />
+              <div className=" rounded-lg flex items-center justify-center">
+               <img
+                src="/src/img/images.jpg" // Place your logo image in the public folder and update the path if needed
+                alt="Hemanta Regmi Logo"
+                className="w-8 h-8 object-contain"
+              />
+                
               </div>
               <div>
                 <h3 className="text-xl font-bold">Hemanta Regmi</h3>
-                <p className="text-blue-400 text-sm">Frontend Developer Trainee</p>
+                <p className="text-blue-400 text-sm">Frontend Developer</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
@@ -65,6 +70,14 @@ const Footer = () => {
                   Home
                 </button>
               </li>
+               <li>
+                <button 
+                  onClick={() => scrollToSection('about')}
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  About Me
+                </button>
+              </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('skills')}
@@ -98,7 +111,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-gray-300">
                 <MapPin size={16} className="text-blue-400" />
-                <span className="text-sm">Hatiban, Lalitpur</span>
+                <span className="text-sm">Hattiban, Lalitpur</span>
               </li>
               <li className="flex items-center gap-3 text-gray-300">
                 <Mail size={16} className="text-blue-400" />

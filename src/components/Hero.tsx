@@ -10,25 +10,26 @@ const Hero = () => {
             Hemanta Regmi
           </h1>
           <p className="text-xl md:text-2xl text-blue-600 mb-8 animate-fade-in">
-            Frontend Developer Trainee
+            Frontend Developer
           </p>
           
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8 animate-fade-in">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Professional Summary</h2>
+            
             <p className="text-gray-600 leading-relaxed text-lg">
-              Motivated and detail-oriented Frontend Trainee with a strong foundation in HTML, CSS, and JavaScript, and a 
-              keen interest in modern web development technologies. Passionate about creating responsive and user-friendly 
-              web interfaces and continuously improving coding skills through hands-on projects and learning. Demonstrates 
-              solid understanding of web development principles, version control systems like Git, and basic UI/UX best 
-              practices. Eager to contribute to collaborative teams and gain real-world experience in a professional development 
-              environment.
+          
+           Enthusiastic and motivated Trainee Frontend Developer with a solid foundation in HTML, CSS, and JavaScript, 
+           along with hands-on experience using modern frameworks like React.js. 
+           Passionate about building responsive and user-friendly web interfaces. 
+           
+           Eager to learn and grow in a collaborative team environment while contributing to real-world projects and improving technical skills.
+            
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 text-gray-600">
             <div className="flex items-center gap-2">
               <MapPin size={20} />
-              <span>Hatiban, Lalitpur</span>
+              <span>Hattiban, Lalitpur</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail size={20} />
