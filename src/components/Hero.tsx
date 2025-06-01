@@ -32,7 +32,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <Mail size={20} />
-              <span>hregmi2960@gmail.com</span>
+              <span>hregmi2060@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone size={20} />

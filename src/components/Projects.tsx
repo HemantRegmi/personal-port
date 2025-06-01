@@ -14,7 +14,7 @@ const Projects = () => {
         "Form validation",
         "User-friendly interface"
       ],
-      liveUrl: "https://dashing-tarte-929254.netlify.app/",
+      liveUrl: "https://dashing-torte-e934fc.netlify.app/",
       type: "E-commerce Website"
     }
   ];

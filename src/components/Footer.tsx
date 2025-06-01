@@ -103,7 +103,7 @@ const Footer = () => {
               <li className="flex items-center gap-3 text-gray-300">
                 <Mail size={16} className="text-blue-400" />
                 <a 
-                  href="mailto:hregmi2960@gmail.com"
+                  href="mailto:hregmi2060@gmail.com"
                   className="text-sm hover:text-blue-400 transition-colors"
                 >
                   hregmi2960@gmail.com
@@ -125,9 +125,7 @@ const Footer = () => {
             <p className="text-gray-400 text-sm text-center md:text-left">
               © 2024 Hemanta Regmi. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm flex items-center gap-1">
-              Made with <Heart size={14} className="text-red-500" /> using React & Tailwind CSS
-            </p>
+            
           </div>
         </div>
       </div>
