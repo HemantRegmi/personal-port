@@ -17,14 +17,7 @@ const Footer = () => {
           
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className=" rounded-lg flex items-center justify-center">
-               <img
-                src="/src/img/images.jpg" // Place your logo image in the public folder and update the path if needed
-                alt="Hemanta Regmi Logo"
-                className="w-8 h-8 object-contain"
-              />
-                
-              </div>
+              
               <div>
                 <h3 className="text-xl font-bold">Hemanta Regmi</h3>
                 <p className="text-blue-400 text-sm">Frontend Developer</p>
