@@ -19,11 +19,7 @@ const Header = () => {
           {/* Logo/Brand */}
           <div className="flex items-center gap-3">
             <div className="rounded-lg flex items-center justify-center">
-              <img
-                src="/src/img/images.jpg" // Place your logo image in the public folder and update the path if needed
-                alt="Hemanta Regmi Logo"
-                className="w-8 h-8 object-contain"
-              />
+              <h1 className="font-bold">HR</h1>
             </div>
             
           </div>
