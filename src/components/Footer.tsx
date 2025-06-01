@@ -11,10 +11,10 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      {/* Main Footer Content */}
+      
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand Section */}
+          
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
@@ -30,22 +30,22 @@ const Footer = () => {
               Always eager to learn new technologies and contribute to innovative projects.
             </p>
             
-            {/* Social Links */}
+            
             <div className="flex gap-4">
               <a 
-                href="mailto:hregmi2960@gmail.com"
+                href="mailto:hregmi2060@gmail.com"
                 className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-200"
               >
                 <Mail size={18} />
               </a>
               <a 
-                href="#"
+                href="https://github.com/HemantRegmi"
                 className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-200"
               >
                 <Github size={18} />
               </a>
               <a 
-                href="#"
+                href="https://www.linkedin.com/in/hemanta-regmi-14a6a0319/"
                 className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-200"
               >
                 <Linkedin size={18} />
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -92,7 +92,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          
           <div>
             <h4 className="text-lg font-semibold mb-4">Get in Touch</h4>
             <ul className="space-y-3">
@@ -118,12 +118,12 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © 2024 Hemanta Regmi. All rights reserved.
+              © 2025 Hemanta Regmi. All rights reserved.
             </p>
             
           </div>
