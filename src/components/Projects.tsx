@@ -1,7 +1,10 @@
-
 import { ExternalLink, Github } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Projects = () => {
+  const [titleRef, titleVisible] = useScrollAnimation();
+  const [projectRef, projectVisible] = useScrollAnimation();
+
   const projects = [
     {
       title: "JDH E-commerce Platform",
@@ -14,7 +17,7 @@ const Projects = () => {
         "Form validation",
         "User-friendly interface"
       ],
-      liveUrl: "https://dashing-torte-e934fc.netlify.app/",
+      liveUrl: "https://jdhstore.netlify.app/",
       type: "E-commerce Website"
     }
   ];
@@ -22,11 +25,24 @@ const Projects = () => {
   return (
     <section id="projects" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Projects</h2>
+        <div 
+          ref={titleRef}
+          className={`text-center mb-12 transition-all duration-700 ease-in-out ${
+            titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
+          <h2 className="text-4xl font-bold text-gray-800">Projects</h2>
+        </div>
         
         <div className="max-w-4xl mx-auto">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <div 
+              key={index} 
+              ref={projectRef}
+              className={`bg-white rounded-lg shadow-lg overflow-hidden mb-8 transition-all duration-700 delay-200 ease-in-out hover:shadow-xl hover:scale-105 ${
+                projectVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'
+              }`}
+            >
               <div className="p-8">
                 <div className="flex justify-between items-start mb-4">
                   <div>
@@ -40,7 +56,7 @@ const Projects = () => {
                       href={project.liveUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                      className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105"
                     >
                       <ExternalLink size={16} />
                       Live Demo
@@ -70,7 +86,7 @@ const Projects = () => {
                     {project.technologies.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                        className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm hover:bg-gray-200 transition-colors"
                       >
                         {tech}
                       </span>
