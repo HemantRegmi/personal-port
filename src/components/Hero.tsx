@@ -45,7 +45,7 @@ const Hero = () => {
               <div className="relative">
                 <div className="w-80 h-80 bg-gradient-to-br from-blue-100 to-indigo-200 rounded-full shadow-2xl flex items-center justify-center border-8 border-white">
                   <img 
-                    src="/src/img/IMG2.jpg" 
+                    src="/IMG2.jpg" 
                     alt="Hemanta Regmi - Frontend Developer"
                     className="w-72 h-72 rounded-full object-cover shadow-lg"
                   />
